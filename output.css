@@ -761,6 +761,11 @@
       margin-top: 0px;
     }
   }
+  .max-\[580px\]\:mt-\[8px\] {
+    @media (width < 580px) {
+      margin-top: 8px;
+    }
+  }
   .max-\[580px\]\:mt-\[10px\] {
     @media (width < 580px) {
       margin-top: 10px;
