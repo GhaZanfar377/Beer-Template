@@ -1047,6 +1047,12 @@
       border-width: 1px;
     }
   }
+  .max-\[580px\]\:border-none {
+    @media (width < 580px) {
+      --tw-border-style: none;
+      border-style: none;
+    }
+  }
   .max-\[580px\]\:border-black {
     @media (width < 580px) {
       border-color: var(--color-black);
