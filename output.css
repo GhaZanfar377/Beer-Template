@@ -7,7 +7,6 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-blue-400: oklch(70.7% 0.165 254.624);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-blue-600: oklch(54.6% 0.245 262.881);
     --color-black: #000;
@@ -196,9 +195,6 @@
   .z-10 {
     z-index: 10;
   }
-  .order-first {
-    order: -9999;
-  }
   .order-last {
     order: 9999;
   }
@@ -262,9 +258,6 @@
   .flex {
     display: flex;
   }
-  .table {
-    display: table;
-  }
   .h-\[1px\] {
     height: 1px;
   }
@@ -315,9 +308,6 @@
   }
   .h-\[90px\] {
     height: 90px;
-  }
-  .h-\[95\%\] {
-    height: 95%;
   }
   .h-\[120px\] {
     height: 120px;
@@ -406,17 +396,8 @@
   .w-\[70px\] {
     width: 70px;
   }
-  .w-\[80\%\] {
-    width: 80%;
-  }
   .w-\[90\%\] {
     width: 90%;
-  }
-  .w-\[90px\] {
-    width: 90px;
-  }
-  .w-\[95\%\] {
-    width: 95%;
   }
   .w-\[130px\] {
     width: 130px;
@@ -436,17 +417,8 @@
   .w-full {
     width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .list-none {
     list-style-type: none;
@@ -472,9 +444,6 @@
   .justify-center {
     justify-content: center;
   }
-  .justify-start {
-    justify-content: flex-start;
-  }
   .gap-\[10px\] {
     gap: 10px;
   }
@@ -495,10 +464,6 @@
   }
   .rounded-full {
     border-radius: calc(infinity * 1px);
-  }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -672,10 +637,6 @@
     --tw-font-weight: 600;
     font-weight: 600;
   }
-  .font-\[700\] {
-    --tw-font-weight: 700;
-    font-weight: 700;
-  }
   .font-bold {
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
@@ -689,9 +650,6 @@
   }
   .wrap-normal {
     overflow-wrap: normal;
-  }
-  .whitespace-nowrap {
-    white-space: nowrap;
   }
   .text-\[\#3e3129\] {
     color: #3e3129;
@@ -710,13 +668,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .transition-\[0\.3s\] {
     transition-property: 0.3s;
@@ -769,29 +720,14 @@
       }
     }
   }
-  .max-\[580px\]\:order-1 {
-    @media (width < 580px) {
-      order: 1;
-    }
-  }
   .max-\[580px\]\:order-first {
     @media (width < 580px) {
       order: -9999;
     }
   }
-  .max-\[580px\]\:order-last {
-    @media (width < 580px) {
-      order: 9999;
-    }
-  }
   .max-\[580px\]\:mt-\[-20px\] {
     @media (width < 580px) {
       margin-top: -20px;
-    }
-  }
-  .max-\[580px\]\:mt-\[-40px\] {
-    @media (width < 580px) {
-      margin-top: -40px;
     }
   }
   .max-\[580px\]\:mt-\[0px\] {
@@ -864,19 +800,9 @@
       margin-left: 40px;
     }
   }
-  .max-\[580px\]\:flex {
-    @media (width < 580px) {
-      display: flex;
-    }
-  }
   .max-\[580px\]\:hidden {
     @media (width < 580px) {
       display: none;
-    }
-  }
-  .max-\[580px\]\:h-\[3h-70px\] {
-    @media (width < 580px) {
-      height: 3h-70px;
     }
   }
   .max-\[580px\]\:h-\[50px\] {
@@ -892,21 +818,6 @@
   .max-\[580px\]\:h-\[70\%\] {
     @media (width < 580px) {
       height: 70%;
-    }
-  }
-  .max-\[580px\]\:h-\[70px\] {
-    @media (width < 580px) {
-      height: 70px;
-    }
-  }
-  .max-\[580px\]\:h-\[90\%\] {
-    @media (width < 580px) {
-      height: 90%;
-    }
-  }
-  .max-\[580px\]\:h-\[90px\] {
-    @media (width < 580px) {
-      height: 90px;
     }
   }
   .max-\[580px\]\:h-\[100px\] {
@@ -944,11 +855,6 @@
       height: 250px;
     }
   }
-  .max-\[580px\]\:h-\[300px\] {
-    @media (width < 580px) {
-      height: 300px;
-    }
-  }
   .max-\[580px\]\:h-\[350px\] {
     @media (width < 580px) {
       height: 350px;
@@ -974,19 +880,9 @@
       height: 520px;
     }
   }
-  .max-\[580px\]\:h-\[550px\] {
-    @media (width < 580px) {
-      height: 550px;
-    }
-  }
   .max-\[580px\]\:h-\[570px\] {
     @media (width < 580px) {
       height: 570px;
-    }
-  }
-  .max-\[580px\]\:h-\[600px\] {
-    @media (width < 580px) {
-      height: 600px;
     }
   }
   .max-\[580px\]\:h-auto {
@@ -1004,16 +900,6 @@
       width: 32%;
     }
   }
-  .max-\[580px\]\:w-\[33\%\] {
-    @media (width < 580px) {
-      width: 33%;
-    }
-  }
-  .max-\[580px\]\:w-\[50\%\] {
-    @media (width < 580px) {
-      width: 50%;
-    }
-  }
   .max-\[580px\]\:w-\[55\%\] {
     @media (width < 580px) {
       width: 55%;
@@ -1029,19 +915,9 @@
       width: 70%;
     }
   }
-  .max-\[580px\]\:w-\[70px\] {
-    @media (width < 580px) {
-      width: 70px;
-    }
-  }
   .max-\[580px\]\:w-\[80\%\] {
     @media (width < 580px) {
       width: 80%;
-    }
-  }
-  .max-\[580px\]\:w-\[80px\] {
-    @media (width < 580px) {
-      width: 80px;
     }
   }
   .max-\[580px\]\:w-\[90\%\] {
@@ -1054,19 +930,9 @@
       width: 90px;
     }
   }
-  .max-\[580px\]\:w-\[95\%\] {
-    @media (width < 580px) {
-      width: 95%;
-    }
-  }
   .max-\[580px\]\:w-\[200px\] {
     @media (width < 580px) {
       width: 200px;
-    }
-  }
-  .max-\[580px\]\:w-\[220px\] {
-    @media (width < 580px) {
-      width: 220px;
     }
   }
   .max-\[580px\]\:w-\[250px\] {
@@ -1094,11 +960,6 @@
       align-items: center;
     }
   }
-  .max-\[580px\]\:items-end {
-    @media (width < 580px) {
-      align-items: flex-end;
-    }
-  }
   .max-\[580px\]\:items-start {
     @media (width < 580px) {
       align-items: flex-start;
@@ -1112,6 +973,11 @@
   .max-\[580px\]\:justify-center {
     @media (width < 580px) {
       justify-content: center;
+    }
+  }
+  .max-\[580px\]\:gap-\[0px\] {
+    @media (width < 580px) {
+      gap: 0px;
     }
   }
   .max-\[580px\]\:gap-\[5px\] {
@@ -1132,12 +998,6 @@
   .max-\[580px\]\:self-center {
     @media (width < 580px) {
       align-self: center;
-    }
-  }
-  .max-\[580px\]\:border {
-    @media (width < 580px) {
-      border-style: var(--tw-border-style);
-      border-width: 1px;
     }
   }
   .max-\[580px\]\:border-black {
@@ -1263,11 +1123,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1278,7 +1133,6 @@
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
     }
   }
