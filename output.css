@@ -465,6 +465,9 @@
   .gap-\[25px\] {
     gap: 25px;
   }
+  .gap-\[30px\] {
+    gap: 30px;
+  }
   .self-center {
     align-self: center;
   }
@@ -1036,6 +1039,12 @@
   .max-\[580px\]\:self-center {
     @media (width < 580px) {
       align-self: center;
+    }
+  }
+  .max-\[580px\]\:border {
+    @media (width < 580px) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
     }
   }
   .max-\[580px\]\:border-black {
