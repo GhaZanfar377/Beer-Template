@@ -955,6 +955,11 @@
       flex-direction: row;
     }
   }
+  .max-\[580px\]\:flex-wrap {
+    @media (width < 580px) {
+      flex-wrap: wrap;
+    }
+  }
   .max-\[580px\]\:items-center {
     @media (width < 580px) {
       align-items: center;
